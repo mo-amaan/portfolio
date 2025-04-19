@@ -1,0 +1,24 @@
+/* Select the h1 tag */
+h1 {
+  /* Add any other styling for your h1 here (font-size, color, etc.) */
+  cursor: pointer; /* Optional: Change cursor to indicate interactivity */
+}
+
+/* Initially, hide the text that should appear on hover */
+h1 .hover-text {
+  display: none;
+}
+
+/* Initially, make sure the original text is displayed */
+h1 .original-text {
+  display: inline; /* Or 'block' if needed, but inline is typical for text */
+}
+
+/* When hovering over the H1: */
+h1:hover .original-text {
+  display: none; /* Hide the original text */
+}
+
+h1:hover .hover-text {
+  display: inline; /* Show the hover text */
+}

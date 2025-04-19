@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="hover.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/">Mo Amaan</a>
+      <nav>
+        <a target="_blank" href="https://www.linkedin.com/in/maamaan/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a target="_blank" href="https://github.com/mo-amaan"
+          ><i class="fa-brands fa-square-github"></i
+        ></a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="intro-header">
+          <h1>
+            <span class="original-text">أهلاً</span>
+            <span class="hover-text">AH-lan (Hello)</span>
+            , I'm Amaan...
+          </h1>
+          <p>Software Developer / IT Engineer</p>
+        </div>
+        <h5 class="intro-description">
+          A Computer Science graduate by qualification, a software developer and
+          IT Engineer by trade. Based in Prince Edward Island, Canada 🇨🇦. I
+          build all sorts of fun and useful internet application and offer IT
+          support and solutions, I love to talk about the current tech trends
+          and play video games.
+        </h5>
+        <div class="links-container">
+          <i class="fa-solid link-arrow fa-arrow-right"></i>
+          <a href="mailto:mo.amaan215@gmail.com"> Email Me</a>
+          <a target="_blank" href="https://www.linkedin.com/in/maamaan/">
+            LinkedIn</a
+          >
+          <a target="_blank" href="https://github.com/mo-amaan"> GitHub</a>
+        </div>
+        <div id="play-game">
+          <button onclick="playGame()">Play a Game ?</button>
+        </div>
+        <div style="display: none" class="color-div">
+          <h4>Pick a Color</h4>
+          <p style="display: none">Great... now it's ruined! 🥲</p>
+          <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+          <button style="display: none" onclick="resetColor()">Reset</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Technologies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JavaScript</td>
+              <td>ReactJs | NextJs | NodeJS $ ExpressJS</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>
+                Data Analysis | Django | Data Visualization | Machine Learning
+              </td>
+            </tr>
+            <tr>
+              <td>Web</td>
+              <td>
+                TailwindCSS | Firebase | PostgresSQL | CI/CD | GIT | Docker |
+                Kubernetes | AWS
+              </td>
+            </tr>
+            <tr>
+              <td>Design</td>
+              <td>Canva | Pixlr | Figma | Microsoft Paint</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Latest Projects</h2>
+        <div class="cards-grid">
+          <div class="project-card">
+            <div>
+              <p>April 2025</p>
+              <h4>SmolJames</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>NextJs</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>NextJs</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>NextJs</p>
+                </div>
+              </div>
+              <p>
+                A hub for learning and landing a job as a software developer.
+              </p>
+
+              <div class="project-links">
+                <a target="_blank" href="">Live Link</a>
+                <a target="_blank" href="">Github</a>
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="/public/fantacss.png"
+                alt="project-thumbnail"
+              />
+            </div>
+          </div>
+          <div class="project-card">
+            <div>
+              <p>April 2025</p>
+              <h4>SmolJames</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>NextJs</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>NextJs</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>NextJs</p>
+                </div>
+              </div>
+              <p>
+                A hub for learning and landing a job as a software developer.
+              </p>
+              <div class="project-links">
+                <a target="_blank" href="">Live Link</a>
+                <a target="_blank" href="">Github</a>
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="/public/fantacss.png"
+                alt="project-thumbnail"
+              />
+            </div>
+          </div>
+          <div class="project-card">
+            <div>
+              <p>April 2024</p>
+              <h4>Library Guide Management System</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>Drupal</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Drupal</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Drupal</p>
+                </div>
+              </div>
+              <p>
+                This is an internal tool for UPEI's Robertson Library enabling  librarians to create subject and research guides that streamline the research process for specific topics.
+              </p>
+              <div class="project-links">
+                <a target="_blank" href="https://www.drupal.org/project/lgms"
+                  >Drupal Link</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="/public/lgms.png"
+                alt="project-thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        By <a target="_blank" href="">Mohammed Amaan</a> ⭐️ Repo on
+        <a target="_blank" href="https://github.com/mo-amaan/portfolio"
+          >GitHub</a
+        >
+      </p>
+    </footer>
+    <script>
+      const body = document.querySelector('body')
+      const colorInput = document.getElementById('color-picker')
+      const colorDiv = document.querySelector('.color-div')
+      const hiddenText = document.querySelector('.color-div p')
+      const resetBtn = document.querySelector('.color-div button')
+      const playBtn = document.getElementById('play-game')
+
+      function playGame(){
+        colorDiv.style.display = 'block'
+        playBtn.style.display = 'none'
+      }
+      
+      function changeColor(){
+        const selectedColor = colorInput.value
+        body.style.background = selectedColor
+        resetBtn.style.display = 'block'
+        hiddenText.style.display = 'block'
+        colorInput.style.display = 'none'
+      }
+      
+      function resetColor(){
+        body.style.background = 'white'
+        colorInput.style.display = 'block'
+        playBtn.style.display = 'block'
+        hiddenText.style.display = 'none'
+        resetBtn.style.display = 'none'
+        colorDiv.style.display = 'none'
+      }
+    </script>
+  </body>
+</html>
