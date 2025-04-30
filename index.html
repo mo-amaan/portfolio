@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -58,7 +58,12 @@
         <div style="display: none" class="color-div">
           <h4>Pick a Color</h4>
           <p style="display: none">Great... now it's ruined! 🥲</p>
-          <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+          <input
+            type="color"
+            id="color-picker"
+            onchange="changeColor()"
+            value="#0084ff"
+          />
           <button style="display: none" onclick="resetColor()">Reset</button>
         </div>
       </section>
@@ -103,25 +108,27 @@
           <div class="project-card">
             <div>
               <p>April 2025</p>
-              <h4>SmolJames</h4>
+              <h4>The FitPrint</h4>
               <div class="tech-list">
                 <div class="card-button-secondary">
-                  <p>NextJs</p>
+                  <p>ReactJs</p>
                 </div>
                 <div class="card-button-secondary">
-                  <p>NextJs</p>
+                  <p>HTML/CSS</p>
                 </div>
                 <div class="card-button-secondary">
-                  <p>NextJs</p>
+                  <p>JSX</p>
                 </div>
               </div>
-              <p>
-                A hub for learning and landing a job as a software developer.
-              </p>
+              <p>Easy to Follow Gym Workout Plan</p>
 
               <div class="project-links">
-                <a target="_blank" href="">Live Link</a>
-                <a target="_blank" href="">Github</a>
+                <a target="_blank" href="www.moamaan.xyz/thefitprint"
+                  >Live Link</a
+                >
+                <a target="_blank" href="https://github.com/mo-amaan/portfolio"
+                  >Github</a
+                >
               </div>
             </div>
             <div class="img-div">
@@ -179,7 +186,9 @@
                 </div>
               </div>
               <p>
-                This is an internal tool for UPEI's Robertson Library enabling  librarians to create subject and research guides that streamline the research process for specific topics.
+                This is an internal tool for UPEI's Robertson Library enabling
+                librarians to create subject and research guides that streamline
+                the research process for specific topics.
               </p>
               <div class="project-links">
                 <a target="_blank" href="https://www.drupal.org/project/lgms"
@@ -207,33 +216,33 @@
       </p>
     </footer>
     <script>
-      const body = document.querySelector('body')
-      const colorInput = document.getElementById('color-picker')
-      const colorDiv = document.querySelector('.color-div')
-      const hiddenText = document.querySelector('.color-div p')
-      const resetBtn = document.querySelector('.color-div button')
-      const playBtn = document.getElementById('play-game')
+      const body = document.querySelector("body");
+      const colorInput = document.getElementById("color-picker");
+      const colorDiv = document.querySelector(".color-div");
+      const hiddenText = document.querySelector(".color-div p");
+      const resetBtn = document.querySelector(".color-div button");
+      const playBtn = document.getElementById("play-game");
 
-      function playGame(){
-        colorDiv.style.display = 'block'
-        playBtn.style.display = 'none'
+      function playGame() {
+        colorDiv.style.display = "block";
+        playBtn.style.display = "none";
       }
-      
-      function changeColor(){
-        const selectedColor = colorInput.value
-        body.style.background = selectedColor
-        resetBtn.style.display = 'block'
-        hiddenText.style.display = 'block'
-        colorInput.style.display = 'none'
+
+      function changeColor() {
+        const selectedColor = colorInput.value;
+        body.style.background = selectedColor;
+        resetBtn.style.display = "block";
+        hiddenText.style.display = "block";
+        colorInput.style.display = "none";
       }
-      
-      function resetColor(){
-        body.style.background = 'white'
-        colorInput.style.display = 'block'
-        playBtn.style.display = 'block'
-        hiddenText.style.display = 'none'
-        resetBtn.style.display = 'none'
-        colorDiv.style.display = 'none'
+
+      function resetColor() {
+        body.style.background = "white";
+        colorInput.style.display = "block";
+        playBtn.style.display = "block";
+        hiddenText.style.display = "none";
+        resetBtn.style.display = "none";
+        colorDiv.style.display = "none";
       }
     </script>
   </body>
