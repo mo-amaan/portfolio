@@ -1,0 +1,5 @@
+# Let the root go to the portfolio as normal
+/    /index.html   200
+
+# Make sure all routes under /thefitprint go to the correct index
+/thefitprint/*    /thefitprint/index.html   200
